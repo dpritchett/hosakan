@@ -6,7 +6,7 @@ _"Hosa-kan" - Japanese for "Aide"_
 
 ## Description
 
-Tiny Sinatra application designed to receive [Papertrail](http://papertrailapp.com/ "Papertrail") webhooks, and restart failing dynos.
+Tiny Sinatra application designed to receive [Papertrail](http://papertrailapp.com/ "Papertrail") webhooks, and restart failing dynos.  We chose Papertrail because it's available in the Heroku marketplace.
 
 Given the generic nature of webhooks from Papertrail, the application should be able to gracefully handle a variety of error responses. In Papertrail, simply define the error parameters and point the webhook at the webservice. Hosakan will parse the webhook, find the "broken" dyno, and restart as necessary.
 
